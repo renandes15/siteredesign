@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../css/equipe.css">
     <title>Equipe</title>
 </head>
@@ -17,6 +18,23 @@
                 <img src="../imgs/homemcodando.jpg" alt="Foto de Renan Gregório">
                 <h2>Renan Gregório</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                <button class="team-btn">Leia mais</button>
+
+                <div class="team-extra">
+                    <a href="#" target="_blank">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Portfólio</span>
+                    </a>
+                    <a href="#" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/renandes15" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
             </div>
     
             <div class="team-card">
@@ -24,6 +42,23 @@
                     alt="Foto de Renato Nodari">
                 <h2>Renato Nodari</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                <button class="team-btn">Leia mais</button>
+                
+                <div class="team-extra">
+                    <a href="#" target="_blank">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Portfólio</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/renatonfc/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/renatonfc" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
             </div>
         </div>
     
@@ -35,6 +70,19 @@
     </main>
 
 
+
+<script>
+     document.querySelectorAll('.team-btn').forEach(button => {
+        button.addEventListener('click', () => {
+           const extra = button.nextElementSibling;
+           const isOpen = extra.classList.contains('active');   
+
+           extra.classList.toggle('active');
+           button.textContent = isOpen ? 'Leia mais' : 'Leia menos';
+        });
+     });
+
+</script>
 
 </body>
 </html>
