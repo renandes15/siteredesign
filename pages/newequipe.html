@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReDesign - Equipe</title>
+    <link rel="stylesheet" href="../css/newequipe.css">
+</head>
+<body>
+    <div class="nav">
+        <nav class="navbar">
+            <a class="btn" href="../pages/contato.html">Contato</a>
+            <a class="btn" href="../pages/newequipe.html">Equipe</a>
+            <a href="../index.html"><img class="logo" src="../imgs/Logo_Renan_Gregorio_2.png" alt="logo"></a>
+            <a class="btn" href="../pages/servicos.html">Serviços</a>
+            <a class="btn" href="../pages/newequipe.html">Projetos</a>
+        </nav>
+    </div>
+
+    <section class="conteiner-geral">
+        <div class="conteiner-up">
+            <div class="imgs">
+                <img class="img-1" src="../imgs/Imagem Profissional - Renan.png" alt="">
+                <img class="img-2" src="../imgs/Logo Renan Gregorio - Pessoal.png" alt=""> 
+            </div>
+            <div class="text">
+                <h1>RENAN GREGORIO DA SILVA</h1>
+                <P>WEB DESIGNER & SOCIAL MEDIA</P>
+                <div class="icons">
+                    <p><img width="40" height="40" src="https://img.icons8.com/ios-glyphs/1c5ae6/code-file.png" alt="code-file"/></p>
+                    <p><img width="35" height="35" src="https://img.icons8.com/ios-filled/1c5ae6/art-prices.png"
+                    alt="art-prices" /></p>
+                </div>
+                <P id="card">+2 ANOS</P>
+            </div>
+        </div>
+        
+        <div class="container-low">
+            <nav class="sidebar">
+                <button class="tab-btn active" onclick="openTab(event, 'sobre')">SOBRE MIM</button>
+                <button class="tab-btn" onclick="openTab(event, 'conhecimentos')">CONHECIMENTOS</button>
+                <button class="tab-btn" onclick="openTab(event, 'projetos')">MEUS PROJETOS</button>
+                <button class="tab-btn" onclick="openTab(event, 'redes')">REDES SOCIAIS</button>
+                <button class="tab-btn" onclick="openTab(event, 'contato')">CONTATO</button>
+            </nav>
+
+            <main class="content">
+                <div id="sobre" class="tab-content active">
+                    <h1>SOBRE MIM</h1>
+                    <p>Olá! Este é o texto sobre quem eu sou...</p>
+                </div>
+    
+                <div id="conhecimentos" class="tab-content">
+                    <h1>CONHECIMENTOS</h1>
+                    <p>Aqui listo minhas habilidades técnicas.</p>
+                </div>
+                <div id="projetos" class="tab-content">
+                    <h1>MEUS PROJETOS</h1>
+                    <p>Confira meus trabalhos recentes.</p>
+                </div>
+                <div id="sociais" class="tab-content">
+                    <h1>REDES SOCIAIS</h1>
+                    <p>Confira meus trabalhos recentes.</p>
+                </div>
+                <div id="projeto" class="tab-content">
+                    <h1>CONTATO</h1>
+                    <p>Confira meus trabalhos recentes.</p>
+                </div>
+            </main>
+        </div>    
+    </section>
+
+    <script src="../JS/newequipe.js"></script>
+</body>
+</html>
